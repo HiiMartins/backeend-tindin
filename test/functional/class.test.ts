@@ -21,7 +21,7 @@ describe('Classes functional test', () => {
 
             const response = await global.testRequest.get('/classes');
             expect(response.status).toBe(200);
-            expect(response.body).toEqual('classes list');
+            expect(response.body).toEqual({message: 'classes list'});
         });
     });
 });
