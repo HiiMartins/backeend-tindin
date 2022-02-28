@@ -32,6 +32,6 @@ describe('Users functional tests', () => {
 
         it.skip('should return 500 when there is any error than validation error', async() => {
             //TODO think in a way to throw a 500
-        })
+        });
     });
 });  
