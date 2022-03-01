@@ -14,7 +14,7 @@ export class UserController {
             res.status(201).send(result);
         } catch (error) {
             if (error instanceof mongoose.Error.ValidationError){
-                res.status(422).send({ error: 'validation error' });
+                res.status(422).send({ error: error.message });
             } else {
                 res.status(500).send({ error: 'Internal Server Error' });
             }
